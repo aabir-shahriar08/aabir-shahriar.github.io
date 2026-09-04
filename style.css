@@ -14,3 +14,32 @@ nav{display:flex;gap:28px}nav a{font-size:15px;padding:19px 0;color:#dce3ed}nav 
 
 /* Beautiful C + Python skill cards */
 .skills-card{overflow:hidden}.skill-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}.skill-card{position:relative;padding:18px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,rgba(15,29,49,.95),rgba(5,13,24,.95));overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.skill-card::before{content:"";position:absolute;width:130px;height:130px;border-radius:50%;right:-55px;top:-65px;background:#168cff;opacity:.10;filter:blur(4px)}.skill-card:hover{transform:translateY(-5px);border-color:#168cff;box-shadow:0 12px 30px rgba(0,0,0,.25)}.light .skill-card{background:linear-gradient(145deg,#fff,#f5f8fc)}.skill-card-top{display:flex;align-items:center;gap:12px;position:relative}.skill-icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-weight:900;font-size:20px;background:rgba(22,140,255,.12);border:1px solid rgba(22,140,255,.35);color:#58b2ff;box-shadow:0 0 20px rgba(22,140,255,.12)}.python-card .skill-icon{font-size:17px;letter-spacing:-1px}.skill-card h3{font-size:16px;margin:0 0 2px}.skill-level{font-size:11px;color:var(--blue);font-weight:700}.skill-card p{color:var(--muted);font-size:12px;line-height:1.55;margin:14px 0}.skill-progress{margin-top:10px}.skill-progress-top{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}.skill-progress-top b{color:var(--text);font-weight:700}.skill-card .bar{height:6px;margin-top:7px;background:#182537}.skill-card .bar span{background:linear-gradient(90deg,#167fff,#51b7ff)}@media(max-width:800px){.skill-cards{grid-template-columns:1fr}}
+
+
+/* Portfolio enhancements */
+.skill-card{min-height:255px;padding:22px}
+.skill-card-top{gap:16px}
+.skill-icon{width:64px;height:64px;border-radius:16px;font-size:28px}
+.python-card .skill-icon{font-size:22px}
+.skill-card h3{font-size:20px}
+.skill-card p{font-size:13px;min-height:60px}
+.skill-level{display:none}
+.journey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.journey-card{background:linear-gradient(145deg,rgba(12,23,39,.9),rgba(5,13,24,.9));border:1px solid var(--line);border-radius:12px;padding:22px;transition:transform .25s ease,border-color .25s ease}
+.light .journey-card{background:var(--card)}
+.journey-card:hover{transform:translateY(-5px);border-color:var(--blue)}
+.journey-icon{font-size:32px;margin-bottom:12px}
+.journey-card h3{font-size:17px;margin-bottom:6px}
+.journey-card p{font-size:13px;color:var(--muted)}
+.learning-card{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:26px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,rgba(12,23,39,.9),rgba(5,13,24,.9))}
+.light .learning-card{background:var(--card)}
+.learning-card .section-title{margin-top:14px;margin-bottom:8px}
+.learning-card p{color:var(--muted);font-size:14px}
+.learning-pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+.learning-pills span{border:1px solid var(--line);border-radius:20px;padding:8px 12px;font-size:12px;color:var(--muted);background:rgba(22,140,255,.05)}
+.learning-pills span:hover{border-color:var(--blue);color:var(--text)}
+@media(max-width:800px){
+  .journey-grid,.learning-card{grid-template-columns:1fr}
+  .learning-pills{justify-content:flex-start}
+  .skill-card{min-height:auto}
+}
