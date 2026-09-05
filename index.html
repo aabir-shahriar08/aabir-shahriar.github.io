@@ -1,162 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Abir — CSE Student & Developer portfolio">
-  <title>ABIR — CSE Student & Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Shahriar Abir — CSE Student & Developer">
+<title>ABIR — CSE Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="cursor"></div>
-  <div class="cursor-dot"></div>
+<div class="grain"></div>
+<div class="progress"></div>
 
-  <header class="nav">
-    <a class="brand" href="#home">A<span>.</span></a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
-  </header>
+<header>
+  <a href="#home" class="logo">ABIR<span>•</span></a>
+  <nav>
+    <a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#work">WORK</a><a href="#contact">CONTACT</a>
+  </nav>
+  <a class="top-link" href="https://www.linkedin.com/in/shahriar-abir-127024405/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+</header>
 
-  <main>
-    <section id="home" class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="pulse"></span> CSE STUDENT · DEVELOPER</p>
-        <h1>BUILD.<br><em>LEARN.</em><br>REPEAT.</h1>
-        <p class="hero-text">Hi, I'm <strong>Shahriar Abir</strong>. I’m learning to turn ideas into clean, useful digital experiences.</p>
-        <div class="hero-actions">
-          <a class="button button-light" href="#projects">Explore work <span>↓</span></a>
-          <a class="button button-ghost" href="https://www.linkedin.com/in/shahriar-abir-127024405/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        </div>
-      </div>
+<main>
+<section id="home" class="hero">
+  <div class="hero-bg-word">ABIR</div>
+  <div class="hero-copy reveal">
+    <div class="eyebrow"><i></i> CSE STUDENT / DEVELOPER</div>
+    <h1>SHAHRIAR<br><span>ABIR</span></h1>
+    <p>Learning. Building. Becoming better — one line of code at a time.</p>
+    <div class="hero-buttons"><a class="pill light" href="#work">VIEW MY WORK ↓</a><a class="pill" href="#contact">LET'S CONNECT ↗</a></div>
+  </div>
+  <div class="hero-photo reveal delay">
+    <div class="photo-ring"></div>
+    <div class="photo-frame"><img src="assets/profile.jpg" alt="Shahriar Abir"></div>
+    <div class="photo-tag"><b>01</b><span>PORTFOLIO<br>2026</span></div>
+    <div class="photo-note">CURIOSITY<br>OVER COMFORT</div>
+  </div>
+  <div class="hero-bottom"><span>BASED IN BANGLADESH</span><span>SCROLL TO EXPLORE ↓</span></div>
+</section>
 
-      <div class="hero-visual reveal delay-1">
-        <div class="orbit orbit-a"></div>
-        <div class="orbit orbit-b"></div>
-        <div class="portrait">
-          <div class="portrait-placeholder">
-            <span>YOUR</span>
-            <b>PHOTO</b>
-            <small>replace assets/profile.jpg</small>
-          </div>
-        </div>
-        <div class="floating-card card-top">2025–26<br><small>UNIVERSITY SESSION</small></div>
-        <div class="floating-card card-bottom"><span>01</span> DIGITAL<br>CRAFT</div>
-      </div>
+<section id="about" class="section about">
+  <div class="label">01 / ABOUT</div>
+  <div class="split">
+    <div class="reveal"><p class="kicker">WHO I AM</p><h2>NOT JUST<br>A <em>STUDENT.</em></h2></div>
+    <div class="about-copy reveal delay">
+      <p class="lead">I’m Shahriar Abir, a Computer Science & Engineering student who enjoys learning through code and real projects.</p>
+      <p>I’m currently strengthening my programming fundamentals, exploring web development and practicing problem solving. The goal is simple: keep learning, keep building, and make every project a little better than the last.</p>
+      <div class="about-meta"><span>2025—26</span><span>CSE</span><span>LEARNING MODE: ON</span></div>
+    </div>
+  </div>
+</section>
 
-      <div class="scroll-mark"><span>SCROLL</span><i></i></div>
-    </section>
+<section id="skills" class="section skills">
+  <div class="label">02 / SKILLS</div>
+  <div class="skills-top reveal"><div><p class="kicker">CURRENT STACK</p><h2>STAY<br><em>CURIOUS.</em></h2></div><p>These are my current learning areas. Percentages represent my present confidence, not a limit.</p></div>
+  <div class="skill-table">
+    <div class="skill reveal"><span>01</span><strong>C</strong><div class="track"><i style="--w:60%"></i></div><b>60%</b></div>
+    <div class="skill reveal"><span>02</span><strong>PYTHON</strong><div class="track"><i style="--w:15%"></i></div><b>15%</b></div>
+    <div class="skill reveal"><span>03</span><strong>HTML / CSS</strong><div class="track"><i style="--w:40%"></i></div><b>40%</b></div>
+    <div class="skill reveal"><span>04</span><strong>JAVASCRIPT</strong><div class="track"><i style="--w:18%"></i></div><b>18%</b></div>
+  </div>
+</section>
 
-    <section id="about" class="section about">
-      <div class="section-label reveal">01 / ABOUT</div>
-      <div class="about-grid">
-        <div class="about-title reveal">
-          <p class="mini">A little about me</p>
-          <h2>CURIOUS<br>BY <em>NATURE.</em></h2>
-        </div>
-        <div class="about-body reveal delay-1">
-          <p class="large">I’m a Computer Science & Engineering student focused on building a strong foundation in programming and problem solving.</p>
-          <p>I enjoy experimenting with code, improving my skills through practice, and turning small ideas into real projects. This portfolio is a snapshot of that journey.</p>
-          <div class="facts">
-            <div><b>01</b><span>Problem solving</span></div>
-            <div><b>02</b><span>Web experiments</span></div>
-            <div><b>03</b><span>Continuous learning</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="work" class="section work">
+  <div class="label">03 / SELECTED WORK</div>
+  <div class="work-head reveal"><h2>BUILDING<br><em>FROM ZERO.</em></h2><span>03 PROJECTS</span></div>
+  <div class="cards">
+    <article class="work-card reveal"><div class="card-top"><span>01 / WEB</span><span>2026</span></div><div class="card-symbol">&lt;/&gt;</div><h3>PERSONAL<br>PORTFOLIO</h3><p>A responsive personal site designed as an interactive introduction to my work and journey.</p><a href="#contact">EXPLORE ↗</a></article>
+    <article class="work-card accent reveal delay"><div class="card-top"><span>02 / C</span><span>2026</span></div><div class="card-symbol">C</div><h3>PROGRAMMING<br>PRACTICE</h3><p>Logic, conditions, loops, functions and problem-solving exercises while building strong C fundamentals.</p><a href="#contact">EXPLORE ↗</a></article>
+    <article class="work-card reveal"><div class="card-top"><span>03 / PYTHON</span><span>ONGOING</span></div><div class="card-symbol">PY</div><h3>PYTHON<br>EXPERIMENTS</h3><p>A growing space for small experiments and projects as I learn Python step by step.</p><a href="#contact">EXPLORE ↗</a></article>
+  </div>
+</section>
 
-    <section id="skills" class="section skills">
-      <div class="section-label reveal">02 / SKILLS</div>
-      <div class="skills-head reveal">
-        <h2>LEARNING<br><em>IN PUBLIC.</em></h2>
-        <p>Current focus — building fundamentals first, then going deeper.</p>
-      </div>
-      <div class="skill-list">
-        <div class="skill-row reveal">
-          <div class="skill-name"><span>01</span><b>C</b></div>
-          <div class="bar"><i style="--w:60%"></i></div>
-          <div class="skill-value">60%</div>
-        </div>
-        <div class="skill-row reveal">
-          <div class="skill-name"><span>02</span><b>Python</b></div>
-          <div class="bar"><i style="--w:15%"></i></div>
-          <div class="skill-value">15%</div>
-        </div>
-        <div class="skill-row reveal">
-          <div class="skill-name"><span>03</span><b>Web</b></div>
-          <div class="bar"><i style="--w:35%"></i></div>
-          <div class="skill-value">Exploring</div>
-        </div>
-        <div class="skill-row reveal">
-          <div class="skill-name"><span>04</span><b>Problem Solving</b></div>
-          <div class="bar"><i style="--w:28%"></i></div>
-          <div class="skill-value">Growing</div>
-        </div>
-      </div>
-    </section>
+<section class="statement">
+  <div class="statement-small reveal">THE JOURNEY IS</div>
+  <h2 class="reveal delay">JUST<br><span>STARTING.</span></h2>
+  <p class="reveal delay2">There’s a lot more to learn. That’s the fun part.</p>
+</section>
 
-    <section id="projects" class="section projects">
-      <div class="section-label reveal">03 / PROJECTS</div>
-      <div class="projects-intro reveal">
-        <h2>THINGS I'M<br><em>BUILDING.</em></h2>
-        <p>Small projects today. Better products tomorrow.</p>
-      </div>
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <div class="project-number">01</div>
-          <div class="project-icon">&lt;/&gt;</div>
-          <h3>Personal Portfolio</h3>
-          <p>A cinematic, responsive portfolio designed to showcase my journey and future work.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-        </article>
-        <article class="project-card featured reveal delay-1">
-          <div class="project-number">02</div>
-          <div class="project-icon">C</div>
-          <h3>C Programming Practice</h3>
-          <p>Programming exercises focused on logic, conditions, loops, functions and problem solving.</p>
-          <div class="tags"><span>C</span><span>Logic</span><span>Practice</span></div>
-        </article>
-        <article class="project-card reveal delay-2">
-          <div class="project-number">03</div>
-          <div class="project-icon">PY</div>
-          <h3>Python Experiments</h3>
-          <p>A growing collection of beginner-friendly experiments while learning Python.</p>
-          <div class="tags"><span>Python</span><span>Learning</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section statement">
-      <div class="statement-line reveal">I DON'T NEED TO</div>
-      <div class="statement-line big reveal delay-1">KNOW IT ALL.</div>
-      <div class="statement-line outline reveal delay-2">I JUST NEED TO</div>
-      <div class="statement-line big reveal delay-3">KEEP GOING.</div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="section-label reveal">04 / CONTACT</div>
-      <div class="contact-content reveal">
-        <p class="mini">Have an idea?</p>
-        <h2>LET'S MAKE<br><em>SOMETHING.</em></h2>
-        <a class="mail" href="https://www.linkedin.com/in/shahriar-abir-127024405/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
-      </div>
-      <div class="contact-footer">
-        <span>© 2026 ABIR</span>
-        <span>CSE STUDENT · BANGLADESH</span>
-        <a href="#home">BACK TO TOP ↑</a>
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+<section id="contact" class="section contact">
+  <div class="label">04 / CONTACT</div>
+  <div class="contact-main reveal">
+    <p class="kicker">LET'S TALK</p>
+    <h2>HAVE AN<br><em>IDEA?</em></h2>
+    <a class="contact-button" href="https://www.linkedin.com/in/shahriar-abir-127024405/" target="_blank" rel="noreferrer">CONNECT WITH ME <span>↗</span></a>
+  </div>
+  <footer><span>© 2026 ABIR</span><span>CSE STUDENT / DEVELOPER</span><a href="#home">BACK TO TOP ↑</a></footer>
+</section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
