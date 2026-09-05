@@ -1,9 +1,28 @@
-const menuBtn=document.querySelector('.menu-btn'),nav=document.querySelector('nav');
-menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
-document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-document.querySelector('.theme-btn').addEventListener('click',()=>{
-  document.body.classList.toggle('light');
-  document.querySelector('.theme-btn').textContent=document.body.classList.contains('light')?'☀':'☾';
+const nav = document.querySelector('.nav');
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting) entry.target.classList.add('visible');
+  });
+},{threshold:.12});
+reveals.forEach(el=>observer.observe(el));
+
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled', window.scrollY > 30);
 });
-document.getElementById('year').textContent=new Date().getFullYear();
-function sendMessage(e){e.preventDefault();alert('Thanks! Your message form is ready. To receive real messages, connect it to a form service such as Formspree or a backend.');e.target.reset();}
+
+const cursor = document.querySelector('.cursor');
+const dot = document.querySelector('.cursor-dot');
+window.addEventListener('mousemove',(e)=>{
+  if(!cursor || !dot) return;
+  cursor.style.left = e.clientX+'px';
+  cursor.style.top = e.clientY+'px';
+  dot.style.left = e.clientX+'px';
+  dot.style.top = e.clientY+'px';
+});
+
+document.querySelectorAll('a').forEach(a=>{
+  a.addEventListener('mouseenter',()=>cursor && (cursor.style.transform='translate(-50%,-50%) scale(1.5)'));
+  a.addEventListener('mouseleave',()=>cursor && (cursor.style.transform='translate(-50%,-50%) scale(1)'));
+});

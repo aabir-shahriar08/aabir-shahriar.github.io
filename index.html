@@ -3,160 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sahriar Abir - Computer Science and Engineering student portfolio">
-  <title>Sahriar Abir | Portfolio</title>
+  <meta name="description" content="Abir — CSE Student & Developer portfolio">
+  <title>ABIR — CSE Student & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <a class="logo" href="#home">&lt;/&gt; <span>Sahriar <b>Abir</b></span></a>
-    <button class="menu-btn" aria-label="Open menu">☰</button>
+  <div class="noise"></div>
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home">A<span>.</span></a>
     <nav>
-      <a class="active" href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="theme-btn" aria-label="Toggle theme">☾</button>
+    <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
   </header>
 
   <main>
     <section id="home" class="hero section">
-      <div class="hero-text">
-        <span class="badge">● &nbsp;Computer Science Student</span>
-        <h1>Hi, I'm<br><span>Sahriar Abir</span></h1>
-        <h2>Computer Science &amp; Engineering Student</h2>
-        <p>I am passionate about programming and problem solving. Currently, I am learning and improving my skills in C programming and exploring the world of technology.</p>
-        <div class="buttons">
-          <a class="btn primary" href="#about">👤 &nbsp; About Me</a>
-          <a class="btn secondary" href="#" onclick="alert('Add your CV file as cv.pdf in this folder, then this button will work.'); return false;">⇩ &nbsp; Download CV</a>
-        </div>
-        <div class="socials">
-          <a href="#" aria-label="GitHub">GH</a>
-          <a href="https://www.linkedin.com/in/shahriar-abir-127024405" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-          <a href="mailto:your-email@example.com" aria-label="Email">✉</a>
-        </div>
-      </div>
-      <div class="hero-photo">
-        <div class="glow"></div>
-        <img src="profile.jpg" alt="Portrait of Sahriar Abir">
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="section-grid">
-        <div>
-          <h2 class="section-title">👤 About Me</h2>
-          <p class="lead">I am Sahriar Abir, a passionate and dedicated Computer Science and Engineering student at the University of Barishal. I love solving problems, building projects, and learning new technologies. My goal is to use technology to create innovative solutions that make a difference.</p>
-        </div>
-        <div class="info-card">
-          <div><span>Name</span><strong>Sahriar Abir</strong></div>
-          <div><span>University</span><strong>University of Barishal</strong></div>
-          <div><span>Department</span><strong>Computer Science and Engineering</strong></div>
-          <div><span>Location</span><strong>Barishal, Bangladesh</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="two-col section">
-      <div id="education" class="card">
-        <h2 class="section-title">🎓 Education</h2>
-        <div class="timeline">
-          <div class="dot"></div>
-          <h3>University of Barishal</h3>
-          <p class="accent">Bachelor of Science in CSE</p>
-          <p>2024 – Present</p>
-          <p>Pursuing my degree with a strong focus on programming, algorithms, data structures, and software development.</p>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse"></span> CSE STUDENT · DEVELOPER</p>
+        <h1>BUILD.<br><em>LEARN.</em><br>REPEAT.</h1>
+        <p class="hero-text">Hi, I'm <strong>Shahriar Abir</strong>. I’m learning to turn ideas into clean, useful digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#projects">Explore work <span>↓</span></a>
+          <a class="button button-ghost" href="https://www.linkedin.com/in/shahriar-abir-127024405/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
       </div>
 
-      <div id="skills" class="card skills-card">
-        <h2 class="section-title">&lt;/&gt; Skills</h2>
-        <div class="skill-cards">
-          <article class="skill-card c-card"><div class="skill-card-top"><div class="skill-icon">C</div><div><h3>C Programming</h3><span class="skill-level"></span></div></div><p>Strong foundation in programming fundamentals, loops, functions, arrays and problem solving.</p><div class="skill-progress"><div class="skill-progress-top"><span>Skill Level</span><b>60%</b></div><div class="bar"><span style="width:60%"></span></div></div></article>
-          <article class="skill-card python-card"><div class="skill-card-top"><div class="skill-icon">Py</div><div><h3>Python</h3><span class="skill-level"></span></div></div><p>Learning Python programming, syntax, problem solving and building a strong programming base.</p><div class="skill-progress"><div class="skill-progress-top"><span>Skill Level</span><b>15%</b></div><div class="bar"><span style="width:15%"></span></div></div></article>
-        </div>
-        <div class="skill-tags"><span>🧩 Problem Solving</span><span>🧠 Logical Thinking</span><span>📖 Continuous Learning</span></div>
-      </div>
-    </section>
-
-
-    <section id="journey" class="section">
-      <div class="section-heading">
-        <h2 class="section-title">✨ My CSE Journey</h2>
-      </div>
-      <div class="journey-grid">
-        <article class="journey-card">
-          <div class="journey-icon">💻</div>
-          <h3>Programming</h3>
-          <p>Building my programming foundation with C and gradually expanding into Python.</p>
-        </article>
-        <article class="journey-card">
-          <div class="journey-icon">🧩</div>
-          <h3>Problem Solving</h3>
-          <p>Practicing logical thinking and solving programming problems step by step.</p>
-        </article>
-        <article class="journey-card">
-          <div class="journey-icon">🚀</div>
-          <h3>Future Goal</h3>
-          <p>Keep learning, build useful projects, and grow into a skilled software professional.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="learning" class="section">
-      <div class="learning-card">
-        <div>
-          <span class="badge">● &nbsp;Currently Learning</span>
-          <h2 class="section-title">Always Learning, Always Building</h2>
-          <p>My goal is to strengthen my programming fundamentals, improve problem-solving skills, and explore new areas of Computer Science.</p>
-        </div>
-        <div class="learning-pills">
-          <span>🐍 Python</span>
-          <span>💻 C Programming</span>
-          <span>🧠 Problem Solving</span>
-          <span>📚 Data Structures</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <h2 class="section-title">🚀 Projects</h2>
-        <span class="outline-btn">View All Projects →</span>
-      </div>
-      <div class="projects">
-        <article class="project"><div class="project-icon">‹/›</div><h3>C Program Collection</h3><p>A collection of useful C programs for beginners to practice and understand fundamentals.</p><span class="tag">C</span></article>
-        <article class="project"><div class="project-icon">▣</div><h3>Calculator in C</h3><p>A simple calculator program built in C to perform basic arithmetic operations.</p><span class="tag">C</span></article>
-        <article class="project"><div class="project-icon">☑</div><h3>To-Do List in C</h3><p>A menu-driven To-Do List application in C to add, view and manage tasks.</p><span class="tag">C</span></article>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="contact-card">
-        <div class="contact-info">
-          <h2 class="section-title">✈ Contact Me</h2>
-          <p>Feel free to reach out to me!</p>
-          <p>✉ &nbsp; your-email@example.com</p>
-          <p>☎ &nbsp; +880 1XXX-XXXXXX</p>
-          <p>📍 &nbsp; Barishal, Bangladesh</p>
-        </div>
-        <form onsubmit="sendMessage(event)">
-          <div class="form-row">
-            <input required placeholder="Your Name">
-            <input required type="email" placeholder="Your Email">
+      <div class="hero-visual reveal delay-1">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="portrait">
+          <div class="portrait-placeholder">
+            <span>YOUR</span>
+            <b>PHOTO</b>
+            <small>replace assets/profile.jpg</small>
           </div>
-          <textarea required placeholder="Your Message"></textarea>
-          <button class="btn primary" type="submit">➤ &nbsp; Send Message</button>
-        </form>
+        </div>
+        <div class="floating-card card-top">2025–26<br><small>UNIVERSITY SESSION</small></div>
+        <div class="floating-card card-bottom"><span>01</span> DIGITAL<br>CRAFT</div>
+      </div>
+
+      <div class="scroll-mark"><span>SCROLL</span><i></i></div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-label reveal">01 / ABOUT</div>
+      <div class="about-grid">
+        <div class="about-title reveal">
+          <p class="mini">A little about me</p>
+          <h2>CURIOUS<br>BY <em>NATURE.</em></h2>
+        </div>
+        <div class="about-body reveal delay-1">
+          <p class="large">I’m a Computer Science & Engineering student focused on building a strong foundation in programming and problem solving.</p>
+          <p>I enjoy experimenting with code, improving my skills through practice, and turning small ideas into real projects. This portfolio is a snapshot of that journey.</p>
+          <div class="facts">
+            <div><b>01</b><span>Problem solving</span></div>
+            <div><b>02</b><span>Web experiments</span></div>
+            <div><b>03</b><span>Continuous learning</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-label reveal">02 / SKILLS</div>
+      <div class="skills-head reveal">
+        <h2>LEARNING<br><em>IN PUBLIC.</em></h2>
+        <p>Current focus — building fundamentals first, then going deeper.</p>
+      </div>
+      <div class="skill-list">
+        <div class="skill-row reveal">
+          <div class="skill-name"><span>01</span><b>C</b></div>
+          <div class="bar"><i style="--w:60%"></i></div>
+          <div class="skill-value">60%</div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="skill-name"><span>02</span><b>Python</b></div>
+          <div class="bar"><i style="--w:15%"></i></div>
+          <div class="skill-value">15%</div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="skill-name"><span>03</span><b>Web</b></div>
+          <div class="bar"><i style="--w:35%"></i></div>
+          <div class="skill-value">Exploring</div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="skill-name"><span>04</span><b>Problem Solving</b></div>
+          <div class="bar"><i style="--w:28%"></i></div>
+          <div class="skill-value">Growing</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-label reveal">03 / PROJECTS</div>
+      <div class="projects-intro reveal">
+        <h2>THINGS I'M<br><em>BUILDING.</em></h2>
+        <p>Small projects today. Better products tomorrow.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-number">01</div>
+          <div class="project-icon">&lt;/&gt;</div>
+          <h3>Personal Portfolio</h3>
+          <p>A cinematic, responsive portfolio designed to showcase my journey and future work.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+        <article class="project-card featured reveal delay-1">
+          <div class="project-number">02</div>
+          <div class="project-icon">C</div>
+          <h3>C Programming Practice</h3>
+          <p>Programming exercises focused on logic, conditions, loops, functions and problem solving.</p>
+          <div class="tags"><span>C</span><span>Logic</span><span>Practice</span></div>
+        </article>
+        <article class="project-card reveal delay-2">
+          <div class="project-number">03</div>
+          <div class="project-icon">PY</div>
+          <h3>Python Experiments</h3>
+          <p>A growing collection of beginner-friendly experiments while learning Python.</p>
+          <div class="tags"><span>Python</span><span>Learning</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section statement">
+      <div class="statement-line reveal">I DON'T NEED TO</div>
+      <div class="statement-line big reveal delay-1">KNOW IT ALL.</div>
+      <div class="statement-line outline reveal delay-2">I JUST NEED TO</div>
+      <div class="statement-line big reveal delay-3">KEEP GOING.</div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-label reveal">04 / CONTACT</div>
+      <div class="contact-content reveal">
+        <p class="mini">Have an idea?</p>
+        <h2>LET'S MAKE<br><em>SOMETHING.</em></h2>
+        <a class="mail" href="https://www.linkedin.com/in/shahriar-abir-127024405/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+      </div>
+      <div class="contact-footer">
+        <span>© 2026 ABIR</span>
+        <span>CSE STUDENT · BANGLADESH</span>
+        <a href="#home">BACK TO TOP ↑</a>
       </div>
     </section>
   </main>
 
-  <footer>© <span id="year"></span> <b>Sahriar Abir</b>. All Rights Reserved. <span>Made with ❤️ and Code</span></footer>
-  <button class="top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
