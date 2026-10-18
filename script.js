@@ -1,9 +1,27 @@
-const header=document.querySelector('.header'), cursor=document.querySelector('.cursor');
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>35));
-window.addEventListener('mousemove',e=>{if(cursor){cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'}});
-document.querySelectorAll('a').forEach(a=>{
- a.addEventListener('mouseenter',()=>{if(cursor)cursor.style.transform='translate(-50%,-50%) scale(1.6)'});
- a.addEventListener('mouseleave',()=>{if(cursor)cursor.style.transform='translate(-50%,-50%) scale(1)'});
+const toggle = document.getElementById('themeToggle');
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('light');
+  toggle.textContent = document.body.classList.contains('light') ? '☀' : '☾';
+});
+const menuButton = document.querySelector('.menu-toggle');
+const nav = document.getElementById('nav');
+menuButton.addEventListener('click', () => {
+  const opened = nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(opened));
+});
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  nav.classList.remove('open');
+  menuButton.setAttribute('aria-expanded', 'false');
+}));
+document.getElementById('contactForm').addEventListener('submit', event => {
+  event.preventDefault();
+  const data = new FormData(event.currentTarget);
+  const subject = encodeURIComponent('Portfolio contact from ' + data.get('name'));
+  const body = encodeURIComponent('Name: ' + data.get('name') + '\nEmail: ' + data.get('email') + '\n\n' + data.get('message'));
+  document.getElementById('formNote').textContent = 'Opening your email app to send the message…';
+  window.location.href = 'mailto:sahriarabir@gmail.com?subject=' + subject + '&body=' + body;
+});
+document.getElementById('cvButton').addEventListener('click', event => {
+  event.preventDefault();
+  alert('Add your CV PDF to this folder and link it here to enable CV downloads.');
 });
