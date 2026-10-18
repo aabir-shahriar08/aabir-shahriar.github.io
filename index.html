@@ -1,119 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shahriar Abir — CSE Student</title>
-<meta name="description" content="Shahriar Abir — Computer Science & Engineering student and aspiring developer.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sahriar Abir — Computer Science and Engineering student portfolio.">
+  <title>Sahriar Abir | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="loader"><div class="loader-name">ABIR<span>.</span></div><div class="loader-bar"><i></i></div></div>
-<div class="grain"></div>
-<div class="cursor"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="code-mark">&lt;/&gt;</span> Sahriar <b>Abir</b></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a>
+      <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle light mode">☾</button>
+  </header>
 
-<header class="header">
-  <a class="logo" href="#home">A<span>.</span></a>
-  <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a></nav>
-  <a class="contact-pill" href="https://www.linkedin.com/in/shahriar-abir-127024405/" target="_blank" rel="noreferrer">Let's connect ↗</a>
-</header>
+  <main>
+    <section id="home" class="hero wrap">
+      <div class="hero-copy">
+        <span class="pill"><i></i> Computer Science Student</span>
+        <p class="hello">Hi, I’m</p>
+        <h1>Sahriar <span>Abir</span></h1>
+        <h2>Computer Science &amp; Engineering Student</h2>
+        <p class="intro">I am passionate about programming and problem solving. Currently, I am learning and improving my skills in C programming and exploring the world of technology.</p>
+        <div class="actions"><a class="btn primary" href="#about">♟ &nbsp; About Me</a><a class="btn outline" href="#" id="cvButton">⇩ &nbsp; Download CV</a></div>
+        <div class="socials">
+          <a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noreferrer">◉</a>
+          <a href="https://linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noreferrer">in</a>
+          <a href="mailto:sahriarabir@gmail.com" aria-label="Email">✉</a>
+        </div>
+      </div>
+      <div class="hero-photo"><div class="glow"></div><img src="assets/profile.jpg" alt="Portrait crop from the supplied portfolio reference"></div>
+    </section>
 
-<main>
-<section id="home" class="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-copy">
-    <div class="eyebrow"><span></span> CSE STUDENT · DEVELOPER</div>
-    <h1><small>SHAHRIAR</small><strong>ABIR</strong></h1>
-    <p class="hero-intro">I’m learning to turn ideas into <b>simple, useful and beautiful</b> digital experiences.</p>
-    <div class="hero-actions">
-      <a class="btn primary" href="#projects">View my work <span>↓</span></a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/shahriar-abir-127024405/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-    </div>
-  </div>
-  <div class="hero-person">
-    <div class="halo"></div>
-    <div class="photo"><img src="profile.jpg" alt="Shahriar Abir"></div>
-    <div class="orbit orbit1"></div><div class="orbit orbit2"></div>
-    <div class="year">20<br><b>26</b></div>
-    <div class="side-note">CODE<br>CREATE<br>GROW</div>
-  </div>
-  <div class="hero-foot"><span>SCROLL TO EXPLORE</span><span>BASED IN BANGLADESH</span></div>
-</section>
+    <section id="about" class="wrap about-grid section">
+      <div><h3><span>♟</span> About Me</h3><p>I am Sahriar Abir, a passionate and dedicated Computer Science and Engineering student at the University of Barishal. I love solving problems, building projects, and learning new technologies. My goal is to use technology to create innovative solutions that make a difference.</p></div>
+      <div class="info panel">
+        <div><b>▦</b><strong>Name</strong><span>Sahriar Abir</span></div>
+        <div><b>⚑</b><strong>University</strong><span>University of Barishal</span></div>
+        <div><b>▤</b><strong>Department</strong><span>Computer Science and Engineering</span></div>
+        <div><b>♦</b><strong>Location</strong><span>Barishal, Bangladesh</span></div>
+      </div>
+    </section>
 
-<section id="about" class="section about">
-  <div class="section-no">01</div>
-  <div class="section-title"><span>ABOUT ME</span><i></i></div>
-  <div class="about-grid">
-    <div class="big-heading reveal">CURIOUS<br><em>BY NATURE.</em></div>
-    <div class="about-text reveal delay">
-      <p class="lead">I’m <b>Shahriar Abir</b>, a Computer Science & Engineering student with a growing passion for programming and technology.</p>
-      <p>I like learning by doing: solving problems, writing code, experimenting with web projects, and improving one step at a time. I’m still early in the journey — and that’s exactly what makes it exciting.</p>
-      <div class="about-stats"><div><b>01</b><span>Learn</span></div><div><b>02</b><span>Build</span></div><div><b>03</b><span>Improve</span></div></div>
-    </div>
-  </div>
-</section>
+    <section class="wrap two-grid section">
+      <article id="education" class="panel card"><h3><span>🎓</span> Education</h3><div class="timeline"><h4>University of Barishal</h4><a>Bachelor of Science in CSE</a><small>2024 – Present</small><p>Pursuing my degree with a strong focus on programming, algorithms, data structures, and software development.</p></div></article>
+      <article id="skills" class="panel card"><h3><span>&lt;/&gt;</span> Skills</h3><div class="skill"><div class="c-logo">C</div><div class="skill-detail"><div><b>C Programming</b><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div></div><div class="traits"><span>🧩 Problem Solving</span><span>🧠 Logical Thinking</span><span>📖 Continuous Learning</span></div></article>
+    </section>
 
-<section id="skills" class="section skills">
-  <div class="section-no">02</div>
-  <div class="section-title"><span>WHAT I’M LEARNING</span><i></i></div>
-  <div class="skills-head reveal"><h2>SKILLS<br><em>IN PROGRESS.</em></h2><p>Progress over perfection. These are my current areas of focus.</p></div>
-  <div class="skill-list">
-    <div class="skill reveal"><span>01</span><b>C</b><div class="bar"><i style="--w:60%"></i></div><strong>60%</strong></div>
-    <div class="skill reveal"><span>02</span><b>PYTHON</b><div class="bar"><i style="--w:15%"></i></div><strong>15%</strong></div>
-    <div class="skill reveal"><span>03</span><b>HTML / CSS</b><div class="bar"><i style="--w:45%"></i></div><strong>45%</strong></div>
-    <div class="skill reveal"><span>04</span><b>JAVASCRIPT</b><div class="bar"><i style="--w:20%"></i></div><strong>20%</strong></div>
-  </div>
-</section>
+    <section id="projects" class="wrap panel projects section">
+      <div class="section-head"><h3><span>🚀</span> Projects</h3><a class="btn outline small" href="https://github.com/" target="_blank" rel="noreferrer">View All Projects&nbsp; →</a></div>
+      <div class="project-grid">
+        <article class="project"><div class="project-icon blue">&lt;/&gt;</div><div><h4>C Program Collection</h4><p>A collection of useful C programs for beginners to practice and understand fundamentals.</p></div><footer><span>C</span><a href="https://github.com/" aria-label="Project on GitHub">◉</a></footer></article>
+        <article class="project"><div class="project-icon green">▦</div><div><h4>Calculator in C</h4><p>A simple calculator program built in C language to perform basic arithmetic operations.</p></div><footer><span>C</span><a href="https://github.com/" aria-label="Project on GitHub">◉</a></footer></article>
+        <article class="project"><div class="project-icon purple">☑</div><div><h4>To-Do List in C</h4><p>A menu-driven To-Do List application in C to add, view and manage tasks.</p></div><footer><span>C</span><a href="https://github.com/" aria-label="Project on GitHub">◉</a></footer></article>
+      </div>
+    </section>
 
-<section id="projects" class="section projects">
-  <div class="section-no">03</div>
-  <div class="section-title"><span>SELECTED PROJECTS</span><i></i></div>
-  <div class="projects-head reveal"><h2>THINGS I<br><em>BUILD.</em></h2><span>03 / 03</span></div>
-  <div class="project-grid">
-    <article class="project featured reveal">
-      <div class="project-meta"><span>01 — WEB</span><span>2026</span></div>
-      <div class="project-art"><div class="window"><i></i><i></i><i></i><b>ABIR<span>.</span></b></div></div>
-      <h3>PERSONAL<br>PORTFOLIO</h3>
-      <p>A responsive portfolio designed to present my skills, projects and journey.</p>
-      <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-    </article>
-    <article class="project reveal delay">
-      <div class="project-meta"><span>02 — C</span><span>2026</span></div>
-      <div class="project-art code-art"><div>if (life) {<br>&nbsp;&nbsp;keepLearning();<br>}</div></div>
-      <h3>C PROGRAMMING<br>PRACTICE</h3>
-      <p>Problem-solving exercises focused on logic, conditions, loops and functions.</p>
-      <div class="tags"><span>C</span><span>Logic</span></div>
-    </article>
-    <article class="project reveal delay2">
-      <div class="project-meta"><span>03 — PYTHON</span><span>ONGOING</span></div>
-      <div class="project-art py-art"><b>PY</b><span>01<br>02<br>03</span></div>
-      <h3>PYTHON<br>EXPERIMENTS</h3>
-      <p>A growing collection of small experiments while building Python fundamentals.</p>
-      <div class="tags"><span>Python</span><span>Learning</span></div>
-    </article>
-  </div>
-</section>
-
-<section class="quote">
-  <div class="quote-line">DON’T WAIT</div>
-  <div class="quote-big">TO BE <em>READY.</em></div>
-  <div class="quote-line">START LEARNING.</div>
-</section>
-
-<section id="contact" class="section contact">
-  <div class="section-no">04</div>
-  <div class="section-title"><span>CONTACT</span><i></i></div>
-  <div class="contact-main reveal">
-    <p>HAVE AN IDEA?</p>
-    <h2>LET'S MAKE<br><em>IT REAL.</em></h2>
-    <a class="big-link" href="https://www.linkedin.com/in/shahriar-abir-127024405/" target="_blank" rel="noreferrer">Connect with me <span>↗</span></a>
-  </div>
-  <footer><span>© 2026 SHAHRIAR ABIR</span><span>CSE STUDENT · DEVELOPER</span><a href="#home">BACK TO TOP ↑</a></footer>
-</section>
-</main>
-<script src="script.js"></script>
+    <section id="contact" class="wrap panel contact section">
+      <div class="contact-info"><h3><span>➤</span> Contact Me</h3><p>Feel free to reach out to me!</p><p>✉ &nbsp; sahriarabir@gmail.com</p><p>☎ &nbsp; +880 1XXX-XXXXXX</p><p>♦ &nbsp; Barishal, Bangladesh</p></div>
+      <form id="contactForm"><div class="form-row"><input name="name" placeholder="Your Name" required><input type="email" name="email" placeholder="Your Email" required></div><textarea name="message" placeholder="Your Message" required></textarea><button class="btn primary" type="submit">➤ &nbsp; Send Message</button><p class="form-note" id="formNote" aria-live="polite"></p></form>
+    </section>
+  </main>
+  <footer class="footer"><span>© 2024 <a href="#home">Sahriar Abir</a>. All Rights Reserved.</span><span>Made with ❤️ and <b>C</b></span></footer>
+  <a href="#home" class="back-top" aria-label="Back to top">↑</a>
 </body>
 </html>
