@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sahriar Abir - Computer Science and Engineering student portfolio">
+  <title>Sahriar Abir | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">&lt;/&gt; <span>Sahriar <b>Abir</b></span></a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav>
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-btn" aria-label="Toggle theme">☾</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-text">
+        <span class="badge">● &nbsp;Computer Science Student</span>
+        <h1>Hi, I'm<br><span>Sahriar Abir</span></h1>
+        <h2>Computer Science &amp; Engineering Student</h2>
+        <p>I am passionate about programming and problem solving. Currently, I am learning and improving my skills in C programming and exploring the world of technology.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#about">👤 &nbsp; About Me</a>
+          <a class="btn secondary" href="#" onclick="alert('Add your CV file as cv.pdf in this folder, then this button will work.'); return false;">⇩ &nbsp; Download CV</a>
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="mailto:your-email@example.com" aria-label="Email">✉</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="glow"></div>
+        <img src="profile.jpg" alt="Portrait of Sahriar Abir">
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-grid">
+        <div>
+          <h2 class="section-title">👤 About Me</h2>
+          <p class="lead">I am Sahriar Abir, a passionate and dedicated Computer Science and Engineering student at the University of Barishal. I love solving problems, building projects, and learning new technologies. My goal is to use technology to create innovative solutions that make a difference.</p>
+        </div>
+        <div class="info-card">
+          <div><span>Name</span><strong>Sahriar Abir</strong></div>
+          <div><span>University</span><strong>University of Barishal</strong></div>
+          <div><span>Department</span><strong>Computer Science and Engineering</strong></div>
+          <div><span>Location</span><strong>Barishal, Bangladesh</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="two-col section">
+      <div id="education" class="card">
+        <h2 class="section-title">🎓 Education</h2>
+        <div class="timeline">
+          <div class="dot"></div>
+          <h3>University of Barishal</h3>
+          <p class="accent">Bachelor of Science in CSE</p>
+          <p>2024 – Present</p>
+          <p>Pursuing my degree with a strong focus on programming, algorithms, data structures, and software development.</p>
+        </div>
+      </div>
+
+      <div id="skills" class="card">
+        <h2 class="section-title">&lt;/&gt; Skills</h2>
+        <div class="skill">
+          <div class="skill-top"><span>C Programming</span><b>85%</b></div>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill-tags">
+          <span>🧩 Problem Solving</span>
+          <span>🧠 Logical Thinking</span>
+          <span>📖 Continuous Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <h2 class="section-title">🚀 Projects</h2>
+        <span class="outline-btn">View All Projects →</span>
+      </div>
+      <div class="projects">
+        <article class="project"><div class="project-icon">‹/›</div><h3>C Program Collection</h3><p>A collection of useful C programs for beginners to practice and understand fundamentals.</p><span class="tag">C</span></article>
+        <article class="project"><div class="project-icon">▣</div><h3>Calculator in C</h3><p>A simple calculator program built in C to perform basic arithmetic operations.</p><span class="tag">C</span></article>
+        <article class="project"><div class="project-icon">☑</div><h3>To-Do List in C</h3><p>A menu-driven To-Do List application in C to add, view and manage tasks.</p><span class="tag">C</span></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact-card">
+        <div class="contact-info">
+          <h2 class="section-title">✈ Contact Me</h2>
+          <p>Feel free to reach out to me!</p>
+          <p>✉ &nbsp; your-email@example.com</p>
+          <p>☎ &nbsp; +880 1XXX-XXXXXX</p>
+          <p>📍 &nbsp; Barishal, Bangladesh</p>
+        </div>
+        <form onsubmit="sendMessage(event)">
+          <div class="form-row">
+            <input required placeholder="Your Name">
+            <input required type="email" placeholder="Your Email">
+          </div>
+          <textarea required placeholder="Your Message"></textarea>
+          <button class="btn primary" type="submit">➤ &nbsp; Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> <b>Sahriar Abir</b>. All Rights Reserved. <span>Made with ❤️ and C</span></footer>
+  <button class="top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
